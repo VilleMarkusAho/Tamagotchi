@@ -1,0 +1,25 @@
+﻿<Window x:Class="UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="Tamagotchi" Height="750" Width="450" Closing="Window_Closing">
+    <Grid Margin="0,0,0,0">
+      
+        <Canvas Name="Kanvaasi" VerticalAlignment="Center" HorizontalAlignment="Center" Height="375" Width="250" Margin="0,0,0,300">
+            <Image Name="Kuva" Height="325" Width="250"/>
+            <Label Name="Nimi" Content="Nimi" HorizontalContentAlignment="Center" FontSize="24" Canvas.Bottom="0" Canvas.Left="0" Canvas.Top="333" Width="250"/>
+        </Canvas>
+        <Button Name="Syo" Content="Syö" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Margin="49,505,0,0" Height="61" Click="Syo_Click"/>
+        <Button x:Name="Nuku" Content="Nuku" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Margin="248,505,0,0" Height="61" Click="Nuku_Click"/>
+        <Button x:Name="Herata" Content="Herätä" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Margin="49,604,0,0" Height="61" Click="Herata_Click"/>
+        <Button x:Name="Pelaa" Content="Pelaa" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Margin="248,604,0,0" Height="61" Click="Pelaa_Click"/>
+        <Label Name="Onnellisuus" FontSize="40" Margin="0,397,0,245" HorizontalContentAlignment="Center"/>
+        <Canvas HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="49,22,0,0">
+            <Image Name="ToimintoKuva" Height="100" Width="100"/>
+        </Canvas>
+
+    </Grid>
+</Window>
